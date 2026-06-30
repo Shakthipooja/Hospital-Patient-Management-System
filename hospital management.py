@@ -13,6 +13,13 @@ class Patient:
         self.disease = disease
         self.blood_group = blood_group
 
+    def display(self):
+        print("Patient ID:", self.patient_id)
+        print("Name:", self.name)
+        print("Age:", self.age)
+        print("Disease:", self.disease)
+        print("Blood Group:", self.blood_group)
+
 
 patient1 = Patient(
     "P001",
@@ -22,8 +29,4 @@ patient1 = Patient(
     "O+"
 )
 
-print(patient1.patient_id)
-print(patient1.name)
-print(patient1.age)
-print(patient1.disease)
-print(patient1.blood_group)
+patient1.display()
