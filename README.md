@@ -1,5 +1,3 @@
-# Hospital-Patient-Management-System
-Python mini project for hospital patient management
 # Hospital Patient Management System
 
 A Python mini project developed using Object-Oriented Programming concepts for managing hospital patient records.
