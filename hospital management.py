@@ -49,6 +49,12 @@ def add_patient():
 add_patient()
 
 
-# Display
-for patient in patients:
-    patient.display()
+def display_patients():
+
+    print("\nAll Patients")
+
+    for patient in patients:
+        patient.display()
+
+
+display_patients()
