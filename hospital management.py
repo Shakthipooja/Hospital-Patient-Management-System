@@ -20,35 +20,35 @@ class Patient:
         print("Disease:", self.disease)
         print("Blood Group:", self.blood_group)
         print()
-
-
 # Patient database
 patients = []
 
 
-# Create patient objects
-patient1 = Patient(
-    "P001",
-    "Ramesh",
-    45,
-    "Diabetes",
-    "O+"
-)
+def add_patient():
 
-patient2 = Patient(
-    "P002",
-    "Priya",
-    28,
-    "Asthma",
-    "B+"
-)
+    patient_id = input("Enter Patient ID: ")
+    name = input("Enter Name: ")
+    age = int(input("Enter Age: "))
+    disease = input("Enter Disease: ")
+    blood_group = input("Enter Blood Group: ")
 
+    patient = Patient(
+        patient_id,
+        name,
+        age,
+        disease,
+        blood_group
+    )
 
-# Store patients in list
-patients.append(patient1)
-patients.append(patient2)
+    patients.append(patient)
+
+    print("Patient Added Successfully")
 
 
-# Display all patients
+# Test
+add_patient()
+
+
+# Display
 for patient in patients:
     patient.display()
